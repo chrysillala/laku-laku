@@ -1,6 +1,7 @@
 ---
-title: "Pandas and Bananas 3"
-date: "2017-08-21"
+path: Pandas and Bananas 4
+date: 2017-08-21
+title: Pandas and Bananas 4
 ---
 
 Do Pandas eat bananas? Check out this short video that shows that yes! pandas do seem to really enjoy bananas! 3333
