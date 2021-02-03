@@ -7,7 +7,7 @@ export default function About({data}) {
   return (
     <Layout>
       <div style={{ color: `teal` }}>
-        <Header headerText="Welcome to Laku-Laku" />
+        <Header headerText="Welcome to our site" />
         <h2>About {data.site.siteMetadata.title}</h2>
         <p>Such wow. Very React.</p>
       </div>

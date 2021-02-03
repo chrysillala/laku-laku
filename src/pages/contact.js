@@ -1,18 +1,19 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Header from "../components/header"
 import Layout from "../components/layout"
+import tw, { styled } from "twin.macro"
 
 export default function Contact() {
   return (
     <Layout>
       <div style={{ color: `teal` }}>
-        <Link to="/">Home</Link>
         <Header headerText="Contact" />
-        <p>Send us a message!</p>
+        <p css={tw`text-blue-500`}>Send us a message!</p>
         <p>
           <a href="mailto:me@example.com">me@example.com</a>
         </p>
+        <button css={tw`shadow-lg ring-4 ring-green-500 p-2 rounded bg-green-300 ring-offset-2`}>This is button</button>
       </div>
     </Layout>
   )

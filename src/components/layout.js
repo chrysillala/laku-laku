@@ -1,6 +1,6 @@
 import React from "react"
 import Footer from '../components/footer'
-import { css } from "@emotion/react"
+import { Global, css } from "@emotion/react"
 import { rhythm } from "../utils/typography"
 import { useStaticQuery, Link, graphql } from "gatsby"
 
@@ -28,13 +28,20 @@ export default function Layout({ children }) {
   )
 
   return (
-    <div
+    <main
       css={css`
         margin: 0 auto;
         max-width: 700px;
         padding: ${rhythm(2)};
         padding-top: ${rhythm(1.5)};
       `}>
+      <Global
+        styles={css`
+          html {
+            background-color: azure;
+          }
+        `}
+      />
       <header css={css`margin-bottom: 1.5rem;`}>
         <Link to="/" css={css`
           text-shadow: none;
@@ -44,13 +51,12 @@ export default function Layout({ children }) {
         </Link>
         <ul css={css`listStyle: none; float: right;`}>
           <ListLink to="/">Home</ListLink>
-          {/* <ListLink to="/post-list/">Post List</ListLink> */}
           <ListLink to="/about/">About</ListLink>
           <ListLink to="/contact/">Contact</ListLink>
         </ul>
       </header>
       {children}
       <Footer />
-    </div>
+    </main>
   )
 }
