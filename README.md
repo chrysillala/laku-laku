@@ -100,3 +100,7 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 ## Add Tailwind, Emotion and Twin Macro
 https://www.gatsbyjs.com/docs/how-to/styling/tailwind-css/
 npm install -D twin.macro @emotion/react @emotion/styled gatsby-plugin-emotion
+
+
+## Adding Analytics
+https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-analytics/
