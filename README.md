@@ -114,3 +114,14 @@ https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
 * Run test: `npm test`
 * Watch test: `npm test -- --watch`
 * Update snapshot (if you make changes you need to update the snapshot): `npm test -- -u`
+
+
+## Use Gatsby Image
+https://www.gatsbyjs.com/docs/how-to/images-and-media/using-gatsby-image/
+
+### Preprocessing External Images
+
+https://www.gatsbyjs.com/docs/how-to/images-and-media/preprocessing-external-images/
+
+If you want the same functionality for files that are remotely hosted online and not located in your Git repo, gatsby-source-filesystem has an API called createRemoteFileNode to solve this.
+

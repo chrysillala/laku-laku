@@ -21,6 +21,15 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-plugin-emotion`,
     {
@@ -39,6 +48,6 @@ module.exports = {
           process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
         ],
       }
-    }
+    },
   ],
 }
