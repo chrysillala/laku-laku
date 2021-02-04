@@ -1,5 +1,5 @@
 import React from "react"
-import Header from '../components/header'
+import Heading from '../components/heading'
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
 
@@ -7,7 +7,7 @@ export default function About({data}) {
   return (
     <Layout>
       <div style={{ color: `teal` }}>
-        <Header headerText="Welcome to our site" />
+        <Heading headerText="Welcome to our site" />
         <h2>About {data.site.siteMetadata.title}</h2>
         <p>Such wow. Very React.</p>
       </div>

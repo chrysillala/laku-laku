@@ -1,6 +1,6 @@
 import React from "react"
 // import { Link } from "gatsby"
-import Header from "../components/header"
+import Heading from '../components/heading'
 import Layout from "../components/layout"
 import tw, { styled } from "twin.macro"
 
@@ -8,7 +8,7 @@ export default function Contact() {
   return (
     <Layout>
       <div style={{ color: `teal` }}>
-        <Header headerText="Contact" />
+        <Heading headerText="Contact" />
         <p css={tw`text-blue-500`}>Send us a message!</p>
         <p>
           <a href="mailto:me@example.com">me@example.com</a>

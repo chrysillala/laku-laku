@@ -1,17 +1,17 @@
 import React from "react"
-import Header from '../components/header'
+import Heading from '../components/heading'
 import Layout from '../components/layout'
 import PostList from '../components/post-list'
 import { graphql } from "gatsby"
+import Img from "gatsby-image"
 import tw from "twin.macro"
 
 export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-      <Header headerText="Home" />
-      <p>What a world.</p>
-      <img src="https://source.unsplash.com/500x200/?nature" alt="" />
+      <img src="https://source.unsplash.com/1200x400/?plant" width="1200" height="400" alt="hero image" css={tw`w-full`} loading="lazy" />
+      <Img fluid={data.file.childImageSharp.fluid} alt="Gatsby logo" />
       <h4 css={tw`my-4`}>{data.allMarkdownRemark.totalCount} Posts</h4>
       <section>
         {data.allMarkdownRemark.edges.map(({ node }) => (
@@ -43,6 +43,13 @@ export const query = graphql`
             slug
           }
           excerpt
+        }
+      }
+    }
+    file(relativePath: { eq: "images/awan-1.jpeg" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }

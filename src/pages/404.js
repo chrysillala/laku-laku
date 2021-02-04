@@ -1,12 +1,12 @@
 import React from "react"
-import Header from '../components/header'
+import Heading from '../components/heading'
 import Layout from "../components/layout"
 
 export default function Custom404() {
   return (
     <Layout>
       <div style={{ color: `teal` }}>
-        <Header headerText="404" />
+        <Heading headerText="404" />
       </div>
     </Layout>
   )

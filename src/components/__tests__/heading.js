@@ -5,12 +5,12 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import Header from '../header'
+import Heading from '../heading'
 
-describe("Header", () => {
-  it("header renders correctly", () => {
+describe("Heading", () => {
+  it("heading renders correctly", () => {
     const tree = renderer
-      .create(<Header headerText="Header Text" />)
+      .create(<Heading headerText="Header Text" />)
       .toJSON()
     expect(tree).toMatchSnapshot()
   })

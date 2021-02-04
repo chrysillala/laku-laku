@@ -14,7 +14,7 @@ export default function Header(props) {
             color: inherit;
           `}
         >
-        <div css={tw`bg-white border-4 border-blue-700 rounded-xl p-4`}>
+        <div css={tw`transition-colors bg-white border-4 border-blue-700 hover:border-blue-500 rounded-xl p-4`}>
           <h3
             css={tw`mb-4 text-lg font-bold`}>
             {props.title}{" "}
