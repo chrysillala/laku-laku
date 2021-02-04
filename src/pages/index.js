@@ -1,5 +1,4 @@
 import React from "react"
-import Heading from '../components/heading'
 import Layout from '../components/layout'
 import PostList from '../components/post-list'
 import { graphql } from "gatsby"
@@ -10,7 +9,7 @@ export default function Home({ data }) {
   console.log(data)
   return (
     <Layout>
-      <img src="https://source.unsplash.com/1200x400/?plant" width="1200" height="400" alt="hero image" css={tw`w-full`} loading="lazy" />
+      <img src="https://source.unsplash.com/1200x400/?plant" width="1200" height="400" alt="hero" css={tw`w-full`} loading="lazy" />
       <Img fluid={data.file.childImageSharp.fluid} alt="Gatsby logo" />
       <h4 css={tw`my-4`}>{data.allMarkdownRemark.totalCount} Posts</h4>
       <section>

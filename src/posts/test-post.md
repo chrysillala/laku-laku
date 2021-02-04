@@ -1,8 +1,8 @@
 ---
 title: "Sweet Pandas Eating Sweets"
 date: "2020-08-10"
-featuredImageUrl: "https://images.unsplash.com/photo-1560237731-890b122a9b6c"
-featuredImageAlt: "Mountains with a starry sky"
+featuredImgUrl: "https://images.unsplash.com/photo-1540126034813-121bf29033d2"
+featuredImgAlt: "Mountains with a starry sky"
 ---
 
 Pandas are really sweet.

@@ -2,7 +2,7 @@ import React from "react"
 import Header from '../components/header'
 import Footer from '../components/footer'
 import { Global, css } from "@emotion/react"
-import { rhythm } from "../utils/typography"
+// import { rhythm } from "../utils/typography"
 import tw from "twin.macro"
 import { useStaticQuery, graphql } from "gatsby"
 
@@ -25,10 +25,8 @@ export default function Layout({ children }) {
       css={[
         css`
           margin: 0 auto;
-          padding: ${rhythm(8)};
-          padding-top: ${rhythm(1.5)};
         `,
-        tw`container mx-auto`]}
+        tw`container mx-auto p-8 lg:p-16`]}
       >
       <Global
         styles={css`
