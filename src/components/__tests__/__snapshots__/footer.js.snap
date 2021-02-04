@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer footer renders correctly 1`] = `
+<footer
+  css={
+    Object {
+      "map": undefined,
+      "name": "r1nipy",
+      "next": undefined,
+      "styles": "
+      background-color: turquoise;
+      color: white;
+      padding: 2rem;
+      text-align: center
+      ",
+      "toString": [Function],
+    }
+  }
+>
+  ©
+   
+  2021
+   
+  Footer Text
+</footer>
+`;

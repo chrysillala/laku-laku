@@ -6,7 +6,7 @@ import tw from "twin.macro"
 
 export default function Header(props) {
   return (
-    <article key={props.key} css={tw`mb-8`}>
+    <article css={tw`mb-8`}>
       <Link
           to={props.slug}
           css={css`

@@ -12,8 +12,8 @@ const ListLink = props => (
     <Link to={props.to}>{props.children}</Link>
   </li>
 )
-export default function Layout({ children }) {
 
+export default function Layout({ children }) {
   // StaticQuery is a new API introduced in Gatsby v2 that allows non-page components (like your layout.js component), to retrieve data via GraphQL queries
   const data = useStaticQuery(
     graphql`
@@ -56,7 +56,7 @@ export default function Layout({ children }) {
         </ul>
       </header>
       {children}
-      <Footer />
+      <Footer footerText="This is footer" />
     </main>
   )
 }

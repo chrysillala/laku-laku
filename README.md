@@ -97,10 +97,20 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
-## Add Tailwind, Emotion and Twin Macro
+## 💅 Add Tailwind, Emotion and Twin Macro
 https://www.gatsbyjs.com/docs/how-to/styling/tailwind-css/
 npm install -D twin.macro @emotion/react @emotion/styled gatsby-plugin-emotion
 
 
-## Adding Analytics
+## 📈 Add Analytics
 https://www.gatsbyjs.com/docs/how-to/adding-common-features/adding-analytics/
+
+
+## 🧪 Setup Unit Test
+https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
+
+`npm install --save-dev jest babel-jest react-test-renderer babel-preset-gatsby identity-obj-proxy`
+
+* Run test: `npm test`
+* Watch test: `npm test -- --watch`
+* Update snapshot (if you make changes you need to update the snapshot): `npm test -- -u`

@@ -1,7 +1,12 @@
 import React from "react"
 import { css } from "@emotion/react"
 
-export default function Footer(props) {
+const currentYear = () => {
+  const date = new Date()
+  return date.getFullYear()
+}
+
+export default function Footer({footerText}) {
   return (
     <footer css={css`
       background-color: turquoise;
@@ -9,7 +14,7 @@ export default function Footer(props) {
       padding: 2rem;
       text-align: center
       `}>
-      This is footer
+      &copy;{" "}{currentYear()}{" "}{footerText}
     </footer>
   )
 }
