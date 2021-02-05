@@ -38,15 +38,18 @@ exports.onCreateNode = async ({ node, getNode, actions, store, cache, createNode
   }
 
   // For all MarkdownRemark nodes that have a featured image url, call createRemoteFileNode
+  // ISSUE - TODO: if we dont give featuredImgUrl value on markdown, it yields error: `url passed to createRemoteFileNode is either missing or not a proper web uri: undefined` though we already give conditional value
   if (node.internal.type === `MarkdownRemark` && node.frontmatter.featuredImgUrl !== null) {
+    // const url = node.frontmatter.featuredImgUrl != undefined ? node.frontmatter.featuredImgUrl : `https://images.unsplash.com/photo-1588665343610-04dfd562e2e7`
     let fileNode = await createRemoteFileNode({
-      url: node.frontmatter.featuredImgUrl, // string that points to the URL of the image
+      url: encodeURI(node.frontmatter.featuredImgUrl), // string that points to the URL of the image
       parentNodeId: node.id, // id of the parent node of the fileNode you are going to create
       createNode, // helper function in gatsby-node to generate the node
       createNodeId, // helper function in gatsby-node to generate the node id
       cache, // Gatsby's cache
       store, // Gatsby's Redux store
     })
+    // console.log(fileNode)
 
     // if the file was created, attach the new node to the parent node
     if(fileNode) {

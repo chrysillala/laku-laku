@@ -1,6 +1,8 @@
 ---
 title: Gudetama animation Episode688, 689
 date: 2020-08-21
+featuredImgUrl: "https://images.unsplash.com/photo-1602661287394-ccf02e1a0893"
+featuredImgAlt: ""
 ---
 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, quod ipsum perspiciatis reiciendis veritatis aperiam esse distinctio cupiditate velit minus ut expedita laudantium qui nam veniam! 3333 444
 

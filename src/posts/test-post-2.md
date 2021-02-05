@@ -1,6 +1,8 @@
 ---
 title: "Living on the Most Crowded Island on Earth"
 date: "2020-08-21"
+featuredImgUrl: "https://images.unsplash.com/photo-1588665343610-04dfd562e2e7"
+featuredImgAlt: ""
 ---
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/G63TF6OMa_8" frameborder="0" allowfullscreen></iframe>
