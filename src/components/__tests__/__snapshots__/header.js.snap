@@ -1,7 +1,117 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Header header renders correctly 1`] = `
-<h1>
-  Header Text
-</h1>
+<header
+  css={
+    Object {
+      "map": undefined,
+      "name": "17cokho",
+      "next": undefined,
+      "styles": "margin-bottom: 1.5rem;",
+      "toString": [Function],
+    }
+  }
+>
+  <a
+    css={
+      Object {
+        "map": undefined,
+        "name": "1v0dam5",
+        "next": undefined,
+        "styles": "
+        text-shadow: none;
+        background-image: none;
+      ",
+        "toString": [Function],
+      }
+    }
+    href="/"
+  >
+    <h3
+      css={
+        Object {
+          "map": undefined,
+          "name": "1qc4l4w",
+          "next": undefined,
+          "styles": "display: inline;",
+          "toString": [Function],
+        }
+      }
+    >
+      This is meta title
+    </h3>
+  </a>
+  <ul
+    css={
+      Object {
+        "map": undefined,
+        "name": "bqpj6q",
+        "next": undefined,
+        "styles": "listStyle: none; float: right;",
+        "toString": [Function],
+      }
+    }
+  >
+    <li
+      css={
+        Object {
+          "map": undefined,
+          "name": "19fma4n",
+          "next": undefined,
+          "styles": "
+    display: inline-block;
+    margin-right: 1rem;
+  ",
+          "toString": [Function],
+        }
+      }
+    >
+      <a
+        href="/"
+      >
+        Home
+      </a>
+    </li>
+    <li
+      css={
+        Object {
+          "map": undefined,
+          "name": "19fma4n",
+          "next": undefined,
+          "styles": "
+    display: inline-block;
+    margin-right: 1rem;
+  ",
+          "toString": [Function],
+        }
+      }
+    >
+      <a
+        href="/about/"
+      >
+        About
+      </a>
+    </li>
+    <li
+      css={
+        Object {
+          "map": undefined,
+          "name": "19fma4n",
+          "next": undefined,
+          "styles": "
+    display: inline-block;
+    margin-right: 1rem;
+  ",
+          "toString": [Function],
+        }
+      }
+    >
+      <a
+        href="/contact/"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</header>
 `;

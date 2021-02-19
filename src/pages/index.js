@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 import tw from "twin.macro"
 
 export default function Home({ data }) {
-  console.log(data)
+  // console.log(data)
   return (
     <Layout>
       <img src="https://source.unsplash.com/1200x400/?plant" width="1200" height="400" alt="hero" css={tw`w-full`} loading="lazy" />

@@ -11,7 +11,7 @@ const ListLink = props => (
   </li>
 )
 
-export default function Heading({metaTitle}) {
+export default function Header({metaTitle}) {
   return (
     <header css={css`margin-bottom: 1.5rem;`}>
       <Link to="/" css={css`
