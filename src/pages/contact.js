@@ -23,7 +23,7 @@ export default function Contact() {
     setStep(parseInt(e.target.value) || '')
   }
 
-  const coloredCounter = counter % 10 == 0 ? tw`text-red-500` : tw`text-blue-500`
+  const coloredCounter = counter % 10 === 0 ? tw`text-red-500` : tw`text-blue-500`
 
   return (
     <Layout>
@@ -44,7 +44,7 @@ export default function Contact() {
             css={tw`shadow-lg py-2 px-4 rounded bg-purple-300 ml-2`}
             onClick={handleAddCount}>+</button>
           <br/><br/>
-          <label>Step (Number only)</label><br/>
+          <label htmlFor="step">Step (Number only)</label><br/>
           <input type="number" name="step" id="step" value={step} pattern="^-?[0-9]\d*\.?\d*$"
             onChange={handleChange} />
         </div>
